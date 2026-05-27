@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "kimiclient",
+  "version": "${version}",
+  "name": "Kimi-Client",
+  "description": "A private Minecraft client mod with customizable interface, chat system, and game modules",
+  "authors": ["iKreeper"],
+  "contact": {
+    "homepage": "https://kimi.ikps.cc",
+    "sources": "https://github.com/iKreeper/kimi-client"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["cc.ikps.kimi.KimiClient"],
+    "client": ["cc.ikps.kimi.KimiClientClient"]
+  },
+  "mixins": ["kimiclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
